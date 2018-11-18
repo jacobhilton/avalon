@@ -130,8 +130,8 @@ function Avalon(players, special){
       script.push(scriptLine);
     }
     var summaryLine = [
-      "There are " + this.goodPlayers + " good players, including " + joinCommasAnd(this.goodSpecial) + ".",
-      "There are " + this.evilPlayers + " evil players, including " + joinCommasAnd(this.evilSpecial) + ".",
+      "There are " + this.goodPlayers + " good players" + (this.goodSpecial.length > 0 ? ", including " + joinCommasAnd(this.goodSpecial) : "") + ".",
+      "There are " + this.evilPlayers + " evil players" + (this.evilSpecial.length > 0 ? ", including " + joinCommasAnd(this.evilSpecial) : "") + ".",
       "The numbers of players on each quest are " + joinCommasAnd(this.allQuests) + ".",
       "The numbers of players on the three largest quests are " + joinCommasAnd(this.largestQuests) + "."
     ];
